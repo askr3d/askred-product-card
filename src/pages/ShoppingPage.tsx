@@ -1,3 +1,4 @@
+import React from 'react'
 import ProductCard, { ProductButtons, ProductImage, ProductTitle } from "../components";
 import { products } from "../data/products";
 
@@ -21,7 +22,7 @@ export const ShoppingPage = () => {
             }}
         >
             {
-                ({ reset, increaseBy, isMaxCountReached, maxCount, count }) => (
+                (/*{ reset, increaseBy, isMaxCountReached, maxCount, count }*/) => (
                     <>
                         <ProductImage />
                         <ProductTitle />
