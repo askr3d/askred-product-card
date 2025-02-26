@@ -13,7 +13,6 @@ export const ProductButtons = ({ className, style }: Props) => {
     const { increaseBy, counter, maxCount } = useContext(ProductContext)
 
     //TODO: isMaxReached = useCallback, dependencias [ count, maxCount ]
-
     const isMaxReached = useCallback(
       () => !!maxCount && counter === maxCount,
       [counter],
